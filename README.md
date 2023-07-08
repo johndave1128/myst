@@ -1,6 +1,6 @@
 <h1>Myst Landing Page</h1>
 This landing page is created for my Odin project, featuring the character Myst from the game Grandchase.
-
+<img src="assets/images/output.JPG">
 <h3>Technologies Used:</h3>
 
 - HTML
