@@ -86,6 +86,7 @@ html {
     z-index: 1;
 }
 .right-items {
+   
     margin-right: 200px;
     display: flex;
     justify-content: flex-end;
@@ -94,6 +95,7 @@ html {
 
 }
 .right-item {
+    cursor: pointer;
     margin-left: 10px;
     text-align: right;
     text-decoration: none;
@@ -144,6 +146,7 @@ span.hl-highlight{
     color: var(--primary-purple);
 }
 .download-playtore-button{
+    cursor: pointer;
     padding: 17px;
     background-color: #555;
     color: var(--primary-white);
@@ -165,6 +168,7 @@ span.hl-highlight{
     font-family: 'Roboto-Flex', sans-serif;
 }
 .download-apple-button{
+    cursor: pointer;
     padding:17px;
     background-color: #555;
     color: var(--primary-white);
@@ -322,6 +326,7 @@ span.about-highlight{
     margin-top: 40px;
 }
 .download-playtore-button2{
+    cursor: pointer;
     padding: 17px;
     background-color: #555;
     color: var(--primary-white);
@@ -343,6 +348,7 @@ span.about-highlight{
     font-family: 'Roboto-Flex', sans-serif;
 }
 .download-apple-button2{
+    cursor: pointer;
     padding:17px;
     background-color: #555;
     color: var(--primary-white);
