@@ -1,8 +1,26 @@
 //loading screen
 window.addEventListener('load', function() {
     var loadingScreen = document.querySelector('#loading-screen');
-    loadingScreen.style.display = 'none'
-});
+    var images = document.querySelectorAll('img');
+    var totalImages = images.length;
+    var loadedImages = 0;
+  
+    function checkImagesLoaded() {
+      loadedImages++;
+      if (loadedImages === totalImages) {
+        loadingScreen.style.display = 'none';
+      }
+    }
+  
+    for (var i = 0; i < totalImages; i++) {
+      if (images[i].complete) {
+        checkImagesLoaded();
+      } else {
+        images[i].addEventListener('load', checkImagesLoaded);
+      }
+    }
+  });
+  
 
 //animation
 var scrollOffset = 50;

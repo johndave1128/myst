@@ -18,7 +18,7 @@ html {
     --primary-darkblue-gradient: rgba(27,24,113,1);
 }
 #loading-screen {
-    background-color: var(--primary-lightdark);
+    background-color: var(--primary-dark);
     position: fixed;
     top: 0;
     left: 0;
@@ -84,15 +84,14 @@ html {
     margin-top: 75px;
     margin-left: 100px;
     z-index: 1;
+
 }
 .right-items {
-   
     margin-right: 200px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
-
 }
 .right-item {
     cursor: pointer;
@@ -126,7 +125,7 @@ html {
     margin-top: -150px;
     margin-left: 200px;
     justify-content: end;
-    animation: bounce 4s infinite;
+    animation: bounce 6s infinite;
 }
 .headline-text{
     font-family: 'Bangers', cursive;
