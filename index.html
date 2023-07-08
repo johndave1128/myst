@@ -5,28 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display&family=Bangers&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
     <title>Grandchase Myst</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <nav>
-        <div class="left-corner">MYST name</div>
-        <div class="center-logo">
-          <img src="/assets/images/grandchase.png" alt="Logo">
+  <div id="loading-screen">
+    <div class="spinner"></div>
+  </div>
+  <!-- Navigation Bar -->
+  <nav class="navigation">
+        <div class="left-item">
+          <img src="/assets/images/IconHero-Myst-Pilgrim.webp">
         </div>
-        <input type="checkbox" id="toggle-menu">
-        <label for="toggle-menu" class="toggle-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <div class="right-corner">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Me</a></li>
-          </ul>
+        <div class="center-item">
+          <img src="/assets/images/grandchase.png">
         </div>
-      </nav>
-      
+        <div class="right-items">
+          <a href="index.html" class="right-item">HOME</a>
+          <a href="index.html" class="right-item">ABOUT ME</a>
+        </div>
+  </nav>
+  <!-- Headline Section -->
+  <section id="headline">
+    <div class="headline-container">
+      <div class="headline-col1">
+        <h1 class="headline-text">
+          the <span class="hl-highlight">secret demon king </span><br>imprisoned <br>
+          in monotony.
+        </h1>
+        <p class="headline-descript">
+          You can play me just press the buttons below.
+        </p>
+          <a href="https://play.google.com/store/apps/details?id=com.kog.grandchaseglobal&hl=en&gl=US&pli=1" class="download-playtore-button"><img src="assets/images/playstore.png" id="playstore">DOWNLOAD</a>
+          <a href="https://apps.apple.com/us/app/grandchase/id1385904294" class="download-apple-button"><img src="assets/images/apple.png" id="apple" alt="apple">DOWNLOAD</a>
+      </div>
+    <div class="headline-col2">
+      <img src="/assets/images/Grand_Chase_for_kakao_Mist_01.webp" alt="myst01">
+    </div>
+  </div>
+  <!-- About Section -->
+ <section id="about">
+  <div class="about-container">
+    <div class="about-col1">
+      <img src="/assets/images/Grand_Chase_for_kakao_Mist_04.webp" alt="myst01">
+    </div>
+    <div class="about-col2">
+      <div class="about-icons">
+          <img src="/assets/images/Rank-SS (1).webp" alt="">
+          <img src="/assets/images/Type-Tank.webp" alt="">
+          <img src="/assets/images/ATTR-Cycles.webp" alt="">
+      </div>
+      <h1 class="title">ABOUT MYST</h1>
+      <hr class="hr-about">
+      <span class="about-descript">
+        Everything about him is secretive. The identity of Abaddon, the time he spent in Demon World, and the role he played in Ancient War earned him the title <span class="about-highlight">"Demon King" </span>are all unclear. Some say he is the first fallen angel and some say he has existed long before the Ancient Demons but no one knows the truth. Hence, he is called the <span class="about-highlight"> Secret Demon King</span>.<br>
+       <br>
+        While Ancient Demons perished, while Demons divided into Hardliners and Moderates, and while Hardliners shifted from generation to generation and broke into smaller factions, the Secret Demon King did not make his appearance. To him, nothing was new; all failed to entertain him. He estimates how much history has progressed. Although he is tempted to fast forward the clockwork of history, he hasn't carried out his foolish thoughts into action. He simply waits for 『<span class="about-highlight">The Moment</span>』 to come.
+      </p>
+    </div>
+    </div>
+    </section>
+  <!-- Media Section -->
+  <section id="media">
+    <div class="media-container">
+      <iframe class="video-myst"  src="https://www.youtube.com/embed/fpLrBxo-MP4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+</div>
+  <script src="script.js"></script>
+  <script src="https://cdn.plyr.io/3.6.3/plyr.polyfilled.js"></script>
 </body>
 </html>

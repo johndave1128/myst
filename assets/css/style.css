@@ -1,0 +1,277 @@
+*{
+    margin: 0px auto;
+    cursor: url('/assets/images/Cursor_Grand\ Chase.cur'), auto;
+}
+/* Utility */
+:root {
+    --primary-lightdark: #333333;
+    --primary-purple: #516DFF;
+    --primary-dark: #070709;
+    --primary-darkblue: #1B1871;
+    --primary-white: #FFFFFF;
+    --primary-shadow: #888888;
+    --primary-transparent:#00000000;
+    --primary-dark-gradient:rgba(7,7,9,1);
+    --primary-darkblue-gradient: rgba(27,24,113,1);
+}
+#loading-screen {
+    background-color: var(--primary-lightdark);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.spinner {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid var(--primary-white);
+    border-top-color: transparent;
+    animation: spin 1s infinite ease-in-out;
+}
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+/* for bouncing animation */
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); /* Start and end position of the bounce */
+    }
+    50% {
+      transform: translateY(-10px); /* Middle position of the bounce */
+    }
+  }
+
+/* navigation bar section */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color:var(--primary-lightdark);
+    color: var(--primary-white);
+    font-size: 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    box-shadow: 1px 2px var(--primary-shadow);
+}
+.left-item {
+    text-align: left;
+    margin-left: 200px;
+}
+.left-item img{
+    width: 60px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.center-item {
+    text-align: center;
+}
+.center-item img{
+    width: 240px;
+    margin-top: 75px;
+    margin-left: 100px;
+    z-index: 1;
+}
+.right-items {
+    margin-right: 200px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+
+}
+.right-item {
+    margin-left: 10px;
+    text-align: right;
+    text-decoration: none;
+    color: var(--primary-white);
+}
+.right-item:hover{
+    color: var(--primary-purple);
+
+}
+/* Headline Section */
+.headline-container{
+    background-image: linear-gradient( 92deg, var(--primary-dark-gradient) 50%, var(--primary-darkblue-gradient) 100% );
+    height: 240px;
+    color: var(--primary-white);
+    padding: 15%;
+    display: flex;
+}
+.headline-col1{
+    height: 500px;
+    flex:3;
+}
+.headline-col2{
+    flex:1;
+}
+.headline-col2 img{
+    width: 300px;
+    height: auto;
+    margin-top: -150px;
+    margin-left: 200px;
+    justify-content: end;
+    animation: bounce 4s infinite;
+}
+.headline-text{
+    font-family: 'Bangers', cursive;
+    font-size: 3.4rem;
+    font-style: thin;
+    text-align: left;
+    font-weight: 100;
+    margin-top: -50px;
+}
+.headline-descript{
+    margin-top: 10px;
+    font-family: 'Roboto-Flex', sans-serif;
+    margin-bottom: 30px ;
+}
+span.hl-highlight{
+    font-family: 'Bangers', cursive;
+    color: var(--primary-purple);
+}
+.download-playtore-button{
+    padding: 17px;
+    background-color: #555;
+    color: var(--primary-white);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    color: var(--primary-white);
+    box-shadow: 0px 0px 4px 0px #516DFF;
+    background-color: var(--primary-transparent);
+}
+.download-playtore-button img{
+    width: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.download-apple-button,
+.download-playtore-button{
+    font-family: 'Roboto-Flex', sans-serif;
+}
+.download-apple-button{
+    padding:17px;
+    background-color: #555;
+    color: var(--primary-white);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    width: 20px;
+    color: var(--primary-dark);
+    background-color: var(--primary-white);
+}
+.download-apple-button img{
+    width: 20px;
+    vertical-align:middle;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+.download-apple-button:hover,
+.download-playtore-button:hover{
+    background-color: var(--primary-lightdark);
+}
+/*About Section*/
+.about-container{
+    background-image: linear-gradient(35deg, var(--primary-dark-gradient) 70.58%, var(--primary-darkblue-gradient) 100%);
+    height: 200px;
+    color: var(--primary-white);
+    padding: 15%;
+    display: flex;
+}
+.about-col1{
+    flex:1;
+}
+.about-col1 img{
+    width: 500px;
+    height: auto;
+    margin-top: -150px;
+    justify-content: start;
+    animation: bounce 4s infinite;
+}
+.about-col2{
+    flex:2;
+    width: 0;
+}
+.about-icons{
+    margin-top: -100px;
+}
+.about-icons img{
+    width: 70px;
+}
+h1.title{
+    font-size: 2.4rem;
+    color: var(--primary-purple);
+    font-family: 'Koulen', cursive;
+
+}
+.hr-about{
+    width:30%;
+    text-align:left;
+    margin-left:0;
+    margin-top: -10px;
+    height:4px;
+    background-color: var(--primary-white);
+}
+.about-descript{
+    margin-top: 10px;
+    font-family: 'Roboto-Flex', sans-serif;
+    margin-bottom: 30px ;
+    font-size: 15px;
+    text-align:justify;
+}
+span.about-highlight{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: var(--primary-purple);
+}
+
+/* Media Section */
+.media-container{
+    background-image: linear-gradient(180deg, var(--primary-dark-gradient) 33.50%, var(--primary-darkblue-gradient) 100%);
+    height: 250px;
+    color: var(--primary-white);
+    padding: 15%;
+    display: flex;
+}
+.video-myst{
+    width:100%;
+    height:500px;
+    margin-top:-100px;
+    box-shadow: 0px 1px 5px 0px #516DFF;
+}
+
+.evolution-container{
+    background-image: linear-gradient(180deg, var(--primary-dark-gradient) 33.50%, var(--primary-darkblue-gradient) 100%);
+    height: 250px;
+    color: var(--primary-white);
+    padding: 15%;
+    display: flex;
+}
+
+/* 
+  @media (min-width: 768px) {
+    .navigation {
+      max-width: 900px;
+    }
+  } */
+  
+/*animate character logo */
+
+.center-logo{
+    animation: bounce 10s infinite;
+}
+.center-logo > img{
+    width: 100px;
+}
