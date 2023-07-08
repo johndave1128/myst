@@ -3,7 +3,7 @@ html {
 }
 *{
     margin: 0px auto;
-    cursor: url('assets/images/Cursor_Grand\ Chase.cur'), auto;
+    cursor: url('../images/Cursor_Grand\ Chase.cur'), auto;
 }
 /* Utility */
 :root {
