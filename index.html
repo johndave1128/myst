@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-  <!-- <div id="loading-screen">
+  <div id="loading-screen">
     <div class="spinner"></div>
-  </div> -->
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <!-- Navigation Bar -->
   <nav class="navigation">
         <div class="left-item">
@@ -58,8 +59,8 @@
           <img src="/assets/images/ATTR-Cycles.webp" alt="">
       </div>
       <h1 class="title">ABOUT MYST</h1>
-      <hr class="hr-about">
-      <span class="about-descript">
+      <hr class="hr-about"/>
+      <div class="about-descript">
         Everything about him is secretive. The identity of Abaddon, the time he spent in Demon World, and the role he played in Ancient War earned him the title <span class="about-highlight">"Demon King" </span>are all unclear. Some say he is the first fallen angel and some say he has existed long before the Ancient Demons but no one knows the truth. Hence, he is called the <span class="about-highlight"> Secret Demon King</span>.<br>
        <br>
         While Ancient Demons perished, while Demons divided into Hardliners and Moderates, and while Hardliners shifted from generation to generation and broke into smaller factions, the Secret Demon King did not make his appearance. To him, nothing was new; all failed to entertain him. He estimates how much history has progressed. Although he is tempted to fast forward the clockwork of history, he hasn't carried out his foolish thoughts into action. He simply waits for 『<span class="about-highlight">The Moment</span>』 to come.
@@ -110,14 +111,11 @@
     </div>
   </section>
 </div>
+</div>
 <footer>
   <p>©2023 MYST | FOR ODIN PROJECT| PURPOSES.</p>
 </footer>
-<script>
-    window.addEventListener('load', function() {
-    var loadingScreen = document.querySelector('#loading-screen');
-    loadingScreen.style.display = 'none'
-    });
+<script src="script.js">
 </script>
 </body>
 </html>
