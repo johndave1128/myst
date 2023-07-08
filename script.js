@@ -1,27 +1,10 @@
 //loading screen
 window.addEventListener('load', function() {
-    var loadingScreen = document.querySelector('#loading-screen');
-    var images = document.querySelectorAll('img');
-    var totalImages = images.length;
-    var loadedImages = 0;
-  
-    function checkImagesLoaded() {
-      loadedImages++;
-      if (loadedImages === totalImages) {
-        loadingScreen.style.display = 'none';
-      }
-    }
-  
-    for (var i = 0; i < totalImages; i++) {
-      if (images[i].complete) {
-        checkImagesLoaded();
-      } else {
-        images[i].addEventListener('load', checkImagesLoaded);
-      }
-    }
-  });
-  
-
+  var loadingScreen = document.getElementById('loading-screen');
+  var content = document.getElementById('content');
+  loadingScreen.style.display = 'none';
+  content.style.display = 'block';
+});
 //animation
 var scrollOffset = 50;
 // Add smooth scroll behavior to navigation links
@@ -53,3 +36,4 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
