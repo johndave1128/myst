@@ -55,6 +55,7 @@ html {
     }
   }
 
+/* Desktop View */
 /* navigation bar section */
 .navigation {
     display: flex;
@@ -414,4 +415,282 @@ box-shadow: 1px 2px var(--primary-shadow);
 }
 #content {
     display: none;
+}
+
+/*Mobile View*/
+@media screen and (max-width: 400px) and (max-width: 928px) {
+    /* Headline Section */
+    .navigation{
+        display: none;
+    }
+    .headline-container {
+      background-image: linear-gradient( 90deg, var(--primary-dark-gradient) 40%, var(--primary-darkblue-gradient) 100% );
+      padding: 5%;
+      display: block;
+      height: 770px;
+      justify-content: center; /* Center horizontally */
+      align-items: center; 
+      text-align: center;
+    }
+    .headline-text {
+      font-size: 2.5rem;
+      margin-top: 10%;
+      text-align: center;
+    }
+    .headline-descript {
+      margin-top: 20px;
+      font-size: 15px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .headline-col2 .myst01{
+      animation: bounce 4s infinite;
+      width: 200px;
+      margin:-150px 50px 10px 70px;
+    }
+    .buttons-headline{
+        padding: 5%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+        margin-left: 70px;
+    }
+    .buttons-headline a{
+        display:inline-block;
+        margin: 10px 50px 10px 10px;
+        font-family: 'Roboto-Flex', sans-serif;
+    }
+    .download-playtore-button{
+        cursor: pointer;
+        width: 70%;
+        padding: 10px;
+        background-color: #555;
+        color: var(--primary-white);
+        text-decoration: none;
+        border-radius: 5px;
+        color: var(--primary-white);
+        box-shadow: 0px 0px 4px 0px #516DFF;
+        background-color: var(--primary-dark);
+    }
+    .download-playtore-button img{
+        width: 30px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    .download-apple-button{
+        cursor: pointer;
+        width: 70%;
+        padding: 10px;
+        background-color: #555;
+        color: var(--primary-white);
+        text-decoration: none;
+        border-radius: 5px;
+        /* margin-bottom: 40px; */
+        color: var(--primary-dark);
+        background-color: var(--primary-white);
+    }
+    .download-apple-button img{
+        width: 20px;
+        vertical-align:middle;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+    .download-apple-button:hover,
+    .download-playtore-button:hover{
+        background-color: var(--primary-lightdark);
+    }
+    /* About Section */
+    .about-container {
+        background-image: linear-gradient(35deg, var(--primary-dark-gradient) 85.58%, var(--primary-darkblue-gradient) 100%);
+        padding: 5%;
+        display: block;
+        height: 1000px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-col1 img{
+        width: 400px;
+        height: auto;
+        margin:0px 50px -900px -20px;
+        animation: bounce 4s infinite;
+    }
+    .about-col2{
+      width: 100%;
+      margin-top:100px ;
+      text-align: center;
+    }
+    .about-icons{
+        padding: 5%;
+        display: flex;
+        margin-bottom: 10px;
+    }
+    .about-icons img{
+        width: 60px;
+    }
+    h1.title{
+        font-size: 50px;
+        color: var(--primary-purple);
+        font-family: 'Koulen', cursive;
+    }
+    .hr-about{
+        width:30%;
+        text-align:center;
+        margin-left:35%;
+        margin-top: -10px;
+        height:1px;
+        background-color: var(--primary-white);
+    }
+    .about-descript{
+        margin-top: 10px;
+        font-family: 'Roboto-Flex', sans-serif;
+        margin-bottom: 30px ;
+        font-size: 15px;
+        text-align:justify;
+    }
+    span.about-highlight{
+        font-weight: bold;
+        color: var(--primary-purple);
+    }
+    /* Media Section */
+    .media-container {
+        background-image: linear-gradient(180deg, var(--primary-dark-gradient) 40.58%, var(--primary-darkblue-gradient) 100%);
+        padding: 10%;
+        display: block;
+        height: 250px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .video-myst {
+      width: 100%;
+      height: 200px;
+      margin-top: 30px;
+    }
+  
+    /* Evolution Section */
+    .evolution-container {
+        background-image: linear-gradient(0deg, var(--primary-dark-gradient) 40.58%, var(--primary-darkblue-gradient) 100%);
+        padding: 10%;
+        /* display: block; */
+        height: 1080px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .evolution-title {
+      margin-top: -100px;
+      font-size: 50px;
+    }
+  
+    .hr-evolution {
+      margin-top: 0px;
+      width: 40%;
+      height: 1px;
+    }
+    .mini-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 100px;
+    }
+    
+    .mini-container img {
+        width: 120%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .evolution-desc {
+        display: none;
+    }
+    
+    /* Download Section */
+    .download-container {
+        background-image: linear-gradient(180deg, var(--primary-dark-gradient) 10.58%, var(--primary-purple) 100%);
+        padding: 10%;
+        /* display: block; */
+        height: 500px;
+        display: block;
+        align-items: center;
+    }
+    .grandchase-download {
+        margin-top: 20px;
+    }
+    .grandchase-download .logo {
+      margin-top: 40px;
+      width: 200px;
+    }
+  
+    .desc-download p {
+      padding: 5%;
+      font-size: 15px;
+      text-align: center;
+    }
+  
+    .desc-download img {
+      width: 50px;
+    }
+    .desc-download-buttons{
+        padding: 1%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+        margin-left: 70px;
+        margin-top: -10px;
+    }
+    .desc-download-buttons a{
+        display:inline-block;
+        margin: 10px 50px 10px 10px;
+        font-family: 'Roboto-Flex', sans-serif;
+    }
+    .download-playtore-button2{
+        cursor: pointer;
+        width: 70%;
+        padding: 10px;
+        background-color: #555;
+        color: var(--primary-white);
+        text-decoration: none;
+        border-radius: 5px;
+        color: var(--primary-white);
+        box-shadow: 0px 0px 4px 0px #516DFF;
+        background-color: var(--primary-dark);
+    }
+    .download-playtore-button2 img{
+        width: 25px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    .download-apple-button2{
+        cursor: pointer;
+        width: 70%;
+        padding: 10px;
+        background-color: #555;
+        color: var(--primary-white);
+        text-decoration: none;
+        border-radius: 5px;
+        /* margin-bottom: 40px; */
+        color: var(--primary-dark);
+        background-color: var(--primary-white);
+    }
+    .download-apple-button2 img{
+        width: 20px;
+        vertical-align:middle;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+    .download-apple-button2:hover,
+    .download-playtore-button2:hover{
+        background-color: var(--primary-lightdark);
+    }
+    /* Footer */
+    footer {
+      font-size:8px;
+      height:50px;
+    }
+  
 }
