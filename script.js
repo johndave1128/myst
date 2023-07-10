@@ -37,3 +37,18 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+function redirectToStore() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  
+  if (/android/i.test(userAgent)) {
+    // User is on an Android device
+    window.location.href = 'https://play.google.com/store/apps/details?id=com.kog.grandchaseglobal&hl=en&gl=US&pli=1'; // Replace with your Google Play Store link
+  } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    // User is on an iOS device
+    window.location.href = 'https://apps.apple.com/us/app/grandchase/id1385904294'; // Replace with your Apple App Store link
+  } else {
+    // User is on a device other than Android or iOS
+    // You can handle this case or provide a fallback link
+    alert('Unsupported device. Please visit the appropriate store manually.');
+  }
+}

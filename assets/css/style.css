@@ -105,6 +105,18 @@ html {
     color: var(--primary-purple);
 
 }
+.button-play{
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+}
+.button-play:hover{
+    color: var(--primary-white);
+    background-color: var(--primary-purple);
+
+}
 /* Headline Section */
 .headline-container{
     background-image: linear-gradient( 92deg, var(--primary-dark-gradient) 50%, var(--primary-darkblue-gradient) 100% );
