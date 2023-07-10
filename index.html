@@ -16,9 +16,9 @@
     </div>
   </div>
   <div id="content">
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <button onclick="topFunction()" id="myBtn" class="myBtn" title="Go to top">Top</button>
   <!-- Navigation Bar -->
-  <nav class="navigation">
+  <nav class="navigation" id="top-nav">
         <div class="left-item">
           <img src="assets/images/IconHero-Myst-Pilgrim.webp">
         </div>
@@ -31,6 +31,35 @@
           <button onclick="redirectToStore();" class="button-play">PLAY NOW</button>
         </div>
   </nav>
+  <div class="bottom-navigation" id="bottom-nav">
+    <ul>
+      <li class="list">
+        <a href="index.html">
+        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+      </a>
+      </li>
+      <li class="list">
+        <a href="#about">
+        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+      </a>
+      </li>
+      <li class="list">
+        <a href="#">
+       <img src="assets/images/IconHero-Myst-Pilgrim.webp" class="myst">
+      </a>
+      </li>
+      <li class="list">
+        <a href="#" onclick="redirectToStore();">
+        <span class="icon"><ion-icon name="play-outline"></ion-icon></span>
+      </a>
+      </li>
+      <li class="list">
+        <a href="#">
+        <span class="icon" onclick="topFunction()"><ion-icon name="arrow-up-circle-outline"></ion-icon></span>
+        </a>
+      </li>
+    </ul>
+  </div>
   <!-- Headline Section -->
   <section id="headline">
     <div class="headline-container">
@@ -89,14 +118,12 @@
           <img src="assets/images/Secret_Demon_King_Myst.webp" class="evolution1">
           <img src="assets/images/MYSTBreakthrough.webp" class="evolution3">
           <img src="assets/images/Endless_Myst.webp" class="evolution4">
-
           </div>
           <div class="evolution-desc">
           <h4 class="conduct">Conductor of Labyrinth</h4>
           <h4 class="secret">Secret Demon King</h4>
           <h4 class="maestro">Maestro of Apocalypse</h4>
           <h4 class="endless">Endless</h4>
-       
         </div>
     </div>
   </section>
@@ -125,5 +152,7 @@
 </footer>
 <script src="script.js">
 </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
