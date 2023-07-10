@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display&family=Bangers&family=Roboto:wght@700&display=swap');
 html {
     scroll-behavior: smooth;
 }
@@ -56,6 +57,18 @@ html {
   }
 
 /* Desktop View */
+
+.hidden{
+    opacity: 0;
+    /* filter: blur(5px);
+    transform: translateX(-100%); */
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    /* filter: blur(0);
+    transform: translateX(0); */
+}
 /* navigation bar section */
 .navigation {
     display: flex;
