@@ -571,7 +571,7 @@ box-shadow: 1px 2px var(--primary-shadow);
     /* Evolution Section */
     .evolution-container {
         background-image: linear-gradient(0deg, var(--primary-dark-gradient) 40.58%, var(--primary-darkblue-gradient) 100%);
-        padding: 200px 20px 100px 10px;
+        padding: 170px 20px 100px 10px;
         height: 900px;
         display: flex;
         overflow: hidden;
@@ -584,7 +584,7 @@ box-shadow: 1px 2px var(--primary-shadow);
       margin-top: -100px;
       font-size: 50px;
     }
-    .hr-evolution {
+    .hr-evolution { 
       margin-top: 0px;
       width: 40%;
       height: 1px;
