@@ -1124,9 +1124,9 @@ footer {
         justify-content: center;
         text-align: center;
         align-items: center;
-        padding: 10px -20px 10px 20px;
+        padding: 10% -20% 10% 10%;
         gap: 30px;
-        margin-right: 50px;
+        margin-right: 10%;
     }
 
     .mini-container img {
