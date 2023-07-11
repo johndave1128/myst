@@ -24,7 +24,7 @@ navLinks.forEach(function(link) {
 let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
-  if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) && window.innerWidth > 600)
+  if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) && window.innerWidth > 1000)
   {
     mybutton.style.display = "block";
   } else {
@@ -32,34 +32,27 @@ function scrollFunction() {
   }
 }
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0; 
 }
 
 // topnav and bottom-nav
 let topNav = document.getElementById("top-nav");
 let bottomNav = document.getElementById("bottom-nav");
 
-if (window.innerWidth < 600) {
-  // Mobile view
+if (window.innerWidth < 1000) {
   topNav.style.display = "none";  
 } else {
-  // Desktop view
   bottomNav.style.display = "none";
 }
-// redirect to store
 function redirectToStore() {
   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
   
   if (/android/i.test(userAgent)) {
-    // User is on an Android device
-    window.location.href = 'https://play.google.com/store/apps/details?id=com.kog.grandchaseglobal&hl=en&gl=US&pli=1'; // Replace with your Google Play Store link
+    window.location.href = 'https://play.google.com/store/apps/details?id=com.kog.grandchaseglobal&hl=en&gl=US&pli=1';
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-    // User is on an iOS device
-    window.location.href = 'https://apps.apple.com/us/app/grandchase/id1385904294'; // Replace with your Apple App Store link
+    window.location.href = 'https://apps.apple.com/us/app/grandchase/id1385904294'; 
   } else {
-    // User is on a device other than Android or iOS
-    // You can handle this case or provide a fallback link
     alert('Unsupported device. Please visit the appropriate store manually.');
   }
 }

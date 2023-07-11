@@ -1,10 +1,12 @@
 <h1>Myst Landing Page</h1>
-This landing page is created for my Odin project, featuring the character Myst from the game Grandchase.
+This 100% responsive landing page is created for my Odin project, featuring the character Myst from the game Grandchase.
 
 <h2>Desktop View</h2>
 <img src="assets/images/output.JPG">
 <h2>Mobile View</h2>
 <img src="assets/images/mobile.JPG">
+<h2>Tablet View</h2>
+<img src="assets/images/tablet.JPG">
 <h3>Technologies Used:</h3>
 
 - HTML
