@@ -48,6 +48,7 @@ if (window.innerWidth < 1000) {
 function redirectToStore() {
   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
   
+  
   if (/android/i.test(userAgent)) {
     window.location.href = 'https://play.google.com/store/apps/details?id=com.kog.grandchaseglobal&hl=en&gl=US&pli=1';
   } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
