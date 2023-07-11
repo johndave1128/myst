@@ -432,10 +432,10 @@ box-shadow: 1px 2px var(--primary-shadow);
 }
 /*Mobile View*/
   /* CSS rules for small devices */
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     .headline-container {
         background-image: linear-gradient( 90deg, var(--primary-dark-gradient) 40%, var(--primary-darkblue-gradient) 100% );
-        padding: 5%;
+        padding: 10%;
         display: block;
         height: 785px;
         overflow: hidden;
@@ -444,7 +444,7 @@ box-shadow: 1px 2px var(--primary-shadow);
         text-align: center;
       }
       .headline-text {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         margin-top: 10%;
         text-align: center;
       }
@@ -458,15 +458,14 @@ box-shadow: 1px 2px var(--primary-shadow);
         position: inherit;
         animation: bounce 4s infinite;
         width: 200px;
-        margin:-150px 50px 10px 70px;
+        margin:-150px 10px 10px 30px;
       }
       .buttons-headline{
-          padding: 5%;
           text-align: center;
           justify-content: center;
           align-items: center;
-          margin-right: 50px;
-          margin-left: 70px;
+          margin-right: 10px;
+          margin-left: 40px;
       }
       .buttons-headline a{
           display:inline-block;
@@ -523,9 +522,9 @@ box-shadow: 1px 2px var(--primary-shadow);
           align-items: center;
       }
       .about-col1 img{
-          width: 370px;
+          width: 340px;
           height: auto;
-          margin:10px 50px -950px -20px;
+          margin:10px 70px -950px -10px;
           animation: bounce 4s infinite;
       }
       .about-col2{
@@ -621,15 +620,15 @@ box-shadow: 1px 2px var(--primary-shadow);
       
       /* Download Section */
       .download-container {
-          background-image: linear-gradient(180deg, var(--primary-dark-gradient) 10.58%, var(--primary-purple) 100%);
-          padding: 10%;
-          height: 500px;
-          display: block;
-          overflow: hidden;
-          align-items: center;
+        background-image: linear-gradient(180deg, var(--primary-dark-gradient) 10.58%, var(--primary-purple) 100%);
+        padding: 10%;
+        height: 500px;
+        display: block;
+        overflow: hidden;
+        align-items: center;
       }
       .grandchase-download {
-          margin-top: 20px;
+        margin-top: 20px;
       }
       .grandchase-download .logo {
         margin-top: 40px;
@@ -645,30 +644,29 @@ box-shadow: 1px 2px var(--primary-shadow);
         width: 50px;
       }
       .desc-download-buttons{
-          padding: 1%;
-          text-align: center;
-          justify-content: center;
-          align-items: center;
-          margin-right: 50px;
-          margin-left: 70px;
-          margin-top: -10px;
+        margin-top: -10px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        margin-left: 40px;
       }
       .desc-download-buttons a{
-          display:inline-block;
-          margin: 10px 50px 10px 10px;
-          font-family: 'Roboto-Flex', sans-serif;
+        display:inline-block;
+        margin: 10px 50px 10px 10px;
+        font-family: 'Roboto-Flex', sans-serif;
       }
       .download-playtore-button2{
-          cursor: pointer;
-          width: 70%;
-          padding: 10px;
-          background-color: #555;
-          color: var(--primary-white);
-          text-decoration: none;
-          border-radius: 5px;
-          color: var(--primary-white);
-          box-shadow: 0px 0px 4px 0px #516DFF;
-          background-color: var(--primary-dark);
+        cursor: pointer;
+        width: 70%;
+        padding: 10px;
+        background-color: #555;
+        color: var(--primary-white);
+        text-decoration: none;
+        border-radius: 5px;
+        color: var(--primary-white);
+        box-shadow: 0px 0px 4px 0px #516DFF;
+        background-color: var(--primary-dark);
       }
       .download-playtore-button2 img{
           width: 25px;
@@ -702,20 +700,20 @@ box-shadow: 1px 2px var(--primary-shadow);
         height:50px;
       }
       .bottom-navigation{
-          bottom: 20px;
-          width: 300px;
-          right: 20px;
-          left: 20px;
-          height: 50px;
-          background-color: var(--primary-dark);
-          position: fixed;
-          display: flex;
-          text-align: center;
-          justify-content: center;
-          align-items: center;
-          z-index: 1;
-          border-radius: 10px;
-          box-shadow: 0px 0px 4px 0px #516DFF;
+        bottom: 20px;
+        width: 300px;
+        right: 20px;
+        left: 20px;
+        height: 50px;
+        background-color: var(--primary-dark);
+        position: fixed;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        border-radius: 10px;
+        box-shadow: 0px 0px 4px 0px #516DFF;
       }
       .bottom-navigation ul{
           padding: 10px 10px 10px 10px;
@@ -776,5 +774,4 @@ box-shadow: 1px 2px var(--primary-shadow);
           display: none;
       }
 }
-
 
